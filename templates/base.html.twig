@@ -6,7 +6,14 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+        {% endblock %}
+        <a href="{{ path('test') }}">Test</a>
+        <a href="{{ path('detail') }}">Detail</a>
+        <a href="{{ path('hello',{'name':'hello'}) }}">Hello</a>
+        <a href="{{ path('hello',{'name':'master'}) }}">Master</a>
+        <a href="{{ path('hello',{'name':'slave'}) }}">Slave</a>
+
         {% block javascripts %}{% endblock %}
     </body>
 </html>
